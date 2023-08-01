@@ -1,6 +1,6 @@
 {
   description = "rPackages exposed with chains";
-  inputs.nixpkgs.url = "nixpkgs";
+  inputs.nixpkgs.url = "github:nixos/nixpkgs/r-updates";
 
   outputs = {
     self,
