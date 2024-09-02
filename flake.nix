@@ -6,7 +6,7 @@
     self,
     nixpkgs,
   }: let
-    systems = ["x86_64-linux"];
+    systems = ["x86_64-linux" "x86_64-darwin" "aarch64-linux" "aarch64-darwin"];
 
     withSystem = f: nixpkgs.lib.genAttrs systems (system: f system);
     pkgsFor = withSystem (system:
